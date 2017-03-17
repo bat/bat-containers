@@ -11,13 +11,10 @@ CMD /bin/bash
 # Install yum/RPM packages:
 
 RUN true \
-    && sed -i '/tsflags=nodocs/d' /etc/yum.conf \
     && yum install -y \
         epel-release \
     && yum groupinstall -y "Development Tools" \
     && yum install -y \
-        deltarpm \
-        \
         wget curl \
         cmake \
         p7zip pbzip2 \
