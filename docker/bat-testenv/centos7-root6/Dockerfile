@@ -43,7 +43,7 @@ RUN true \
         libjpeg-devel libpng-devel \
         mesa-libGLU-devel \
     && mkdir -p "/opt/root" \
-    && curl -L "https://root.cern.ch/download/root_v6.09.02.Linux-centos7-x86_64-gcc4.8.tar.gz" \
+    && curl -L "https://root.cern.ch/download/root_v6.12.06.Linux-centos7-x86_64-gcc4.8.tar.gz" \
         | tar --strip-components=1 -x -z -f - -C "/opt/root"
 
 
